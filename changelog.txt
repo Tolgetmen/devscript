@@ -4,6 +4,9 @@ NOTICE:
 	the boolean "useCache" (constructor) is still useless, the command cache will be added in future updates to make the script even faster.
 	Another future plan: Command: "include <abs|rel> <pathToFile>" a command to include external compiled libraries "plug in style".
 	Added in 1.8.0 with the command: import "path_to_jar";
+
+1.9.1:
+	- Added a new command: catch [BLOCK] and catch [BLOCK] [BLOCK]: Errors thrown by commands inside this block wont kill the program. It acts like a try catch statement in 	   java etc. The second block of the catch command (catch [BLOCK] [BLOCK]) is executed, when an error os thrown in the first block. The variable $ERRORMESSAGE indicated the 	    message of the error usually displayed as "Failed to execute command: ..." or "Array out of bounds exception"
 	
 1.9.0:
 	- This big Update gives you an Editor GUI! It runs, if you run the program without arguments. However, if you specify arguments inside the
